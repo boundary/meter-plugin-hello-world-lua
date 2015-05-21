@@ -1,0 +1,25 @@
+{
+  "description": "Example Hello World plugin",
+  "command": "boundary-meter index.lua",
+  "metrics": [
+    "BOUNDARY_HELLO_WORLD"
+  ],
+  "paramSchema": [
+    {
+      "title": "Source",
+      "name": "source",
+      "description": "Source to be used for the measurement",
+      "type": "string",
+      "default": "",
+      "required": true
+    },
+    {
+      "title": "Poll Interval",
+      "name": "pollInterval",
+      "description": "Poll Interval (seconds, defaults to 5 seconds)",
+      "type": "number",
+      "default": "5",
+      "required": true
+    }
+  ]
+}
