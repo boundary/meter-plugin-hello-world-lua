@@ -23,9 +23,11 @@ local timer = require('timer')
 -- Read the param.json file that provides the input values to the plugin
 local _parameters = json.parse(fs.readFileSync('param.json')) or {}
 
---
-local _source = _parameters.source
-local _pollInterval = _parameters.pollInterval
+-- Source from the configuration param.json file
+local _source = _parameters.source or "hello_world"
+
+-- How often to output a measurement
+local POLL_INTERVAL = 5
 
 -- Define our function that "samples" our measurement value
 function poll()
@@ -43,5 +45,5 @@ end
 
 -- Set the timer interval and call back function poll(). Multiple input configuration
 -- pollIterval by 1000 since setIterval expects milliseconds
-timer.setInterval(_pollInterval * 1000, poll)
+timer.setInterval(POLL_INTERVAL * 1000, poll)
 
