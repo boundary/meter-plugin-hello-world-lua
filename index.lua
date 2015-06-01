@@ -13,18 +13,13 @@
 -- limitations under the License.
 
 -- Add require statements for built-in libaries we wish to use
-local fs = require('fs')
-local json = require('json')
 local math = require('math')
 local os = require('os')
 local string = require('string')
 local timer = require('timer')
 
--- Read the param.json file that provides the input values to the plugin
-local _parameters = json.parse(fs.readFileSync('param.json')) or {}
-
--- Source from the configuration param.json file
-local _source = _parameters.source or "hello_world"
+-- Source of our metric
+local SOURCE = 'HelloWorld'
 
 -- How often to output a measurement
 local POLL_INTERVAL = 5
@@ -33,13 +28,13 @@ local POLL_INTERVAL = 5
 function poll()
 
   -- Generate random number between 0 and 99
-  value = math.random(0, 99)
+  local value = math.random(0, 99)
 
   -- Get the current time
-  timestamp = os.time()
+  local timestamp = os.time()
 
   -- Output our measurement record to standard out
-  print(string.format("%s %s %s %s", "BOUNDARY_HELLO_WORLD", value, _source, timestamp))
+  print(string.format("%s %s %s %s", "BOUNDARY_HELLO_WORLD", value, SOURCE, timestamp))
 
 end
 
