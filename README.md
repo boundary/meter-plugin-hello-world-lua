@@ -22,15 +22,15 @@ None
 
 ### Plugin Configuration Fields
 
-|Field Name |Description                         |
-|:----------|:-----------------------------------|
-|source     |Magnitude of the generated Sine-Wave|
-|pollIterval|Rate of the generated Sine-Wave     |
+|Field Name  |Description                         |
+|:-----------|:-----------------------------------|
+|source      |Magnitude of the generated Sine-Wave|
+|pollInterval|Rate of the generated Sine-Wave    |
 
 ### Metrics Collected
 
 |Metric Name                     |Description                        |
 |:-------------------------------|:----------------------------------|
-| BOUNDARY\_SINE\_WAVE\_AMPLITUDE| Magnitude of the sampled Sine-Wave|
+| BOUNDARY\_HELLO\_WORLD         | Magnitude of the sampled Sine-Wave|
 
 
