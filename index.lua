@@ -34,7 +34,7 @@ function poll()
   local timestamp = os.time()
 
   -- Output our measurement record to standard out
-  print(string.format("%s %s %s %s", "BOUNDARY_HELLO_WORLD", value, SOURCE, timestamp))
+  print(string.format("%s %s %s %s", "BOUNDARY_HELLOWORLD", value, SOURCE, timestamp))
 
 end
 
