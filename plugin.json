@@ -1,8 +1,9 @@
 {
   "description": "Example Hello World plugin",
   "command": "boundary-meter index.lua",
+  "icon": "icon.png",
   "metrics": [
-    "BOUNDARY_HELLO_WORLD"
+    "BOUNDARY_HELLOWORLD"
   ],
   "paramSchema": [
     {
