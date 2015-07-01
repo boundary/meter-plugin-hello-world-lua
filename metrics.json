@@ -1,5 +1,5 @@
 {
-    "BOUNDARY_HELLOWORLD": {
+    "BOUNDARY_HELLO_WORLD": {
         "defaultAggregate": "avg",
         "defaultResolutionMS": 1000,
         "description": "Example metric for the Hello World Boundary meter plugin",
