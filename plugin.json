@@ -1,5 +1,5 @@
 {
-  "description": "Example Hello World plugin",
+  "description": "Hello World plugin",
   "command": "boundary-meter index.lua",
   "icon": "icon.png",
   "metrics": [
